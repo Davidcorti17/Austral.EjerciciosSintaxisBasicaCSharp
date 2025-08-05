@@ -21,16 +21,21 @@ Console.WriteLine("nombre de la empresa es " + empresa + " tiene " + empleados +
 int precio1 = 150;
 int precio2 = 45;
 float iva = precio1 + precio2 * 21 / 100;
+Console.WriteLine(iva);
 // b) En base a la siguiente variable -> int ingresoAnual = 1500;
 //    Hacer otra variable que represente el ingreso mensual y mostrarla por consola.
 int ingresoAnual = 1500;
 int ingresoMes = ingresoAnual / 12;
+Console.WriteLine(ingresoMes);
 // c) Crear una variable que represente si el ingreso anual es mayor a 1000 o no.
 bool EsMayoraAMil = ingresoAnual > 1000;
+Console.WriteLine(!EsMayoraAMil);
 // d) Calcular cuánto gana una empresa por mes si su ingreso anual es 1500
 //    y tiene que pagar 12% de impuestos al estado.
 int ingresoAnual2 = 1500;
 float impuestos = ((ingresoAnual2 * 12) / 1000);
+Console.WriteLine(impuestos);
+
 
 //// ==========================
 // 3. Estructuras de Control
@@ -41,20 +46,20 @@ float impuestos = ((ingresoAnual2 * 12) / 1000);
 //     - Si tiene Entre 11 y 50 → "Pyme"
 //     - Si tiene más de 50 → "Big"
 
-//int empleados = 0;
+int empleado = int.Parse(Console.ReadLine());
 
-//if (empleados <= 1)
-//{
-//    string empresa = "startup"; }
-//else if (empleados > 11 && empleados <= 50)
-//{
-//    string empresa = "Pyme";
-//}
-//else
-//{
-//    string empresa = "big";
-//}
-//}
+if (empleado <= 1)
+{
+    Console.WriteLine("StartUp");
+}
+else if (empleado > 11 && empleados <= 50)
+{
+    Console.WriteLine("Pyme");
+}
+else
+{
+    Console.WriteLine("BiG");
+}
 
 // b) En base al monto de inversión de una empresa, clasificar la inversión como:
 //     - Si es menor a 10,000 → "Baja"
