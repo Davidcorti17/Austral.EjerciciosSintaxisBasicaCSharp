@@ -3,30 +3,36 @@
 // =====================
 
 // a) Declarar una variable con el nombre de una empresa y mostrarla por consola.
-
+string empresa = "David";
+Console.WriteLine(empresa);
 // b) Declarar una variable con la cantidad de empleados y mostrarla por consola.
-
+int empleados = 15;
+Console.WriteLine(empleados);
 // c) Declarar una variable decimal con el ingreso mensual estimado.
-
+decimal ingresoMensual = 50000.75m;
 // d) Mostrar por consola un mensaje que diga el nombre de la empresa, cantidad e empleados e ingreso.
-
+Console.WriteLine("nombre de la empresa es " + empresa + " tiene " + empleados + " empleados y un ingreso de" + ingresoMensual);
 
 // ==============
 // 2. Operadores
 // ==============
 
 // a) Declarar dos precios de productos y calcular el total de los dos con IVA.
-
+int precio1 = 150;
+int precio2 = 45;
+float iva = precio1 + precio2 * 21 / 100;
 // b) En base a la siguiente variable -> int ingresoAnual = 1500;
 //    Hacer otra variable que represente el ingreso mensual y mostrarla por consola.
-
+int ingresoAnual = 1500;
+int ingresoMes = ingresoAnual / 12;
 // c) Crear una variable que represente si el ingreso anual es mayor a 1000 o no.
-
+bool EsMayoraAMil = ingresoAnual > 1000;
 // d) Calcular cuánto gana una empresa por mes si su ingreso anual es 1500
 //    y tiene que pagar 12% de impuestos al estado.
+int ingresoAnual2 = 1500;
+float impuestos = ((ingresoAnual2 * 12) / 1000);
 
-
-// ==========================
+//// ==========================
 // 3. Estructuras de Control
 // ==========================
 
@@ -34,6 +40,21 @@
 //     - Si tiene 10 o menos empleados → "Startup"
 //     - Si tiene Entre 11 y 50 → "Pyme"
 //     - Si tiene más de 50 → "Big"
+
+//int empleados = 0;
+
+//if (empleados <= 1)
+//{
+//    string empresa = "startup"; }
+//else if (empleados > 11 && empleados <= 50)
+//{
+//    string empresa = "Pyme";
+//}
+//else
+//{
+//    string empresa = "big";
+//}
+//}
 
 // b) En base al monto de inversión de una empresa, clasificar la inversión como:
 //     - Si es menor a 10,000 → "Baja"
